@@ -1,0 +1,67 @@
+Attribute VB_Name = "Crediauto"
+Sub ins()
+    Range("B1").Value = "CREDIAUTO"
+    Range("B2").Value = "A: RESPONSABILIDAD CIVIL EXTRACONTRACTUAL POR LESIÓN Y/O MUERTE DE PERSONAS."
+    Range("B3").Value = "C: RESPONSABILIDAD CIVIL EXTRACONTRACTUAL POR DAÑOS A LA PROPIEDAD DE TERCEROS."
+    Range("B4").Value = "D: COLISIÓN Y/O VUELCO."
+    Range("B5").Value = "F: ROBO Y/O HURTO."
+    Range("B6").Value = "G: MULTIASISTENCIA AUTOMÓVILES."
+    Range("B7").Value = "H: RIESGOS ADICIONALES."
+    Range("B8").Value = "I: RESPONSABILIDAD CIVIL EXTRACONTRACTUAL EXTENDIDA POR LESIÓN Y/O MUERTE DE PERSONAS Y DAÑOS A LA PROPIEDAD DE TERCEROS."
+    Range("B9").Value = "L: RESPONSABILIDAD CIVIL EXTRACONTRACTUAL EXTENDIDA POR LESIÓN Y/O MUERTE DE PERSONAS Y DAÑOS A LA PROPIEDAD DE TERCEROS POR EL USO DE UN AUTO SUSTITUTO."
+    Range("B10").Value = "B: SERVICIOS MÉDICOS FAMILIARES BÁSICA."
+    Range("B11").Value = "E: GASTOS LEGALES."
+    Range("B12").Value = "J: PÉRDIDA DE OBJETOS PERSONALES."
+    Range("B13").Value = "K: INDEMNIZACIÓN PARA TRANSPORTE ALTERNATIVO"
+    Range("B14").Value = "M: MULTIASISTENCIA EXTENDIDA."
+    Range("B15").Value = "N: EXENCIÓN DE DEDUCIBLE."
+    Range("B16").Value = "P: SERVICIOS MÉDICOS FAMILIARES PLUS Y MUERTE DE LOS OCUPANTES DEL VEHÍCULO ASEGURADO."
+    Range("B17").Value = "Y: EXTRATERRITORIALIDAD."
+    Range("B18").Value = "Z: RIESGOS PARTICULARES."
+
+    
+    Range("C1").Value = "DEDUCIBLES"
+    Range("C2").Value = "No contratada"
+    Range("C3").Value = "No contratada"
+    Range("C4").Value = "No contratada"
+    Range("C5").Value = "No contratada"
+    Range("C6").Value = "No contratada"
+    Range("C7").Value = "No contratada"
+    Range("C8").Value = "No contratada"
+    Range("C9").Value = "No contratada"
+    Range("C10").Value = "No contratada"
+    Range("C11").Value = "No contratada"
+    Range("C12").Value = "No contratada"
+    Range("C13").Value = "No contratada"
+    Range("C14").Value = "No contratada"
+    Range("C15").Value = "No contratada"
+    Range("C16").Value = "No contratada"
+    Range("C17").Value = "No contratada"
+    Range("C18").Value = "No contratada"
+    
+    Range("B21").Value = "Condiciones Particulares"
+    Range("B22").Value = "Inserte Condiciones Particulares"
+    
+    Range("B24").Value = "Condiciones Generales"
+    Range("B25").Value = "https://1drv.ms/w/s!Au8GQldWcy2ihO89xm2pBw69DYbiPg?e=JoyUdP"
+    
+    Range("B27").Value = "Las condiciones particulares pueden variar en las renovaciones, o durante el año póliza por variaciones solicitadas. Las condiciones Generales pueden variar por modificaciones de la aseguradora, pero deben respetar las condiciones pactadas en la vigencia del contrato. Las adjuntas sirven como referencia, puede solicitar las más actuales de creerlo necesario."
+    
+    'Insertando Coberturas generales
+    ActiveSheet.Shapes.AddShape(msoShapeCurvedLeftArrow, 19.5, 9, 42.75, 69).Select
+    ActiveSheet.Hyperlinks.Add Anchor:=Selection.ShapeRange.Item(1), Address:="", SubAddress:="'Cronograma'!" & lugar
+    Range("F1").Value = "PRINCIPALES EXCLUSIONES"
+    Range("F2").Value = "El Asegurado incumpla con lo establecido en el Artículo “Obligaciones del Asegurado” de este Contrato."
+    Range("F3").Value = "Actos malintencionados cometidos por parte del Asegurado, de sus empleados, el conductor o personas que actúen en su nombre o a la que se le haya confiado la custodia del vehículo."
+    Range("F4").Value = "Las obligaciones, compromisos, arreglos, convenios sean éstos judiciales o extrajudiciales que contraiga el Asegurado."
+    Range("F5").Value = "Los casos donde el conductor del vehículo asegurado no cuente con la licencia habilitante según definición de este Contrato."
+    Range("F6").Value = "El uso del vehículo declarado en la Solicitud del Seguro ha sido variado en forma permanente o reiterada sin el debido consentimiento del Instituto, siempre que esa modificación implique una agravación del riesgo asegurado por la cobertura específica"
+    Range("F7").Value = "El automóvil asegurado sea utilizado para el transporte privado de personas."
+    Range("F8").Value = "Sea utilizado en competencias o en pruebas de seguridad."
+    Range("F9").Value = "Haya sido puesto a disposición o uso de persona distinta del Asegurado, por contrato de arrendamiento, venta condicional, convenio o promesa de compra, prenda, gravamen o condición que no haya sido declarada en esta póliza."
+    Range("F10").Value = "Pérdida de beneficios anticipada."
+    Range("F11").Value = "Si al ocurrir un accidente, el Conductor del vehículo asegurado se encuentra bajo la influencia o efectos del alcohol, drogas tóxicas o perturbadoras, estupefacientes, sustancias psicotrópicas, estimulantes u otras sustancias."
+    Range("F12").Value = "Para cobertura de daño directo: Los daños en la cabina de pasajeros, sus componentes y vidrios del automóvil asegurado, sean causados por bultos u otros objetos que sea transportado en dicha cabina. El daño que produzca al automóvil asegurado la carga transportada, e.    El daño que el remolque, el remolque liviano o la carreta produzca, al automóvil asegurado que realiza la acción de remolcar o halar."
+    
+    Range("F21").Value = "La información suministrada es un resumen, con lo que su asesor considera es lo más importante, se recomienda leer las condiciones generales, las cuales son descargables en https://www.sugese.fi.cr/seccion-polizas-registradas/p%C3%B3lizas-vigentes, o las puede solicitar al corredor o a la asistente"
+End Sub
